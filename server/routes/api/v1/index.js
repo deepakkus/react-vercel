@@ -11,7 +11,7 @@ const AdminController = require('../../../Controller/Auth/Admin');
 
 router.post('/admin/login', AdminController.login);
 router.post('/admin/register', AdminController.register);
-//router.use(middleware); // ========> auth setup 
+router.use(middleware); // ========> auth setup 
 
 
 /** ================================= Admin section ================================ */
