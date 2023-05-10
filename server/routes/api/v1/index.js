@@ -8,12 +8,12 @@ router.get('/', function(req, res, next) {
 
 const AdminController = require('../../../Controller/Auth/Admin');
 
-const middleware  = require('../../../service/middleware').middleware;
+//const middleware  = require('../../../service/middleware').middleware;
 //const PatientController = require('../../../Controller/Admin/Patient');
 
 router.post('/admin/login', AdminController.login);
 router.post('/admin/register', AdminController.register);
-router.use(middleware); // ========> auth setup 
+//router.use(middleware); // ========> auth setup 
 
 
 /** ================================= Admin section ================================ */
